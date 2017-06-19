@@ -1,12 +1,12 @@
 package ca.bcitsa.android;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.FragmentActivity;
 import android.util.Patterns;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -18,9 +18,8 @@ import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-import ca.bcitsa.android.BCITSAWeb.InnerWebViewClient;
 
-public class BCITWeb  extends Activity  {
+public class BCITWeb extends FragmentActivity {
 
 	WebView myWebView ;
 	Intent intent;
