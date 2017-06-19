@@ -20,15 +20,16 @@ import android.widget.ListView;
  
 public class MainActivity  extends ListActivity implements ActionBar.TabListener {
     /**
-     * This class describes an individual sample (the sample title, and the activity class that
-     * demonstrates this sample).
-     */
+	 * This class describes an individual Menu (the Menu title, and the activity
+	 * class that demonstrates this Menu).
+	 */
 	static boolean  showingFirst = true;
-    private class Sample  {
+
+	private class Menu {
         private CharSequence title;
         private Class<? extends Activity> activityClass;
 
-        public Sample(String string, Class<? extends Activity> activityClass) {
+		public Menu(String string, Class<? extends Activity> activityClass) {
             this.activityClass = activityClass;
             this.title = string;
         }
@@ -40,11 +41,11 @@ public class MainActivity  extends ListActivity implements ActionBar.TabListener
     }
 
     /**
-     * The collection of all samples in the app. This gets instantiated in {@link
-     * #onCreate(android.os.Bundle)} because the {@link Sample} constructor needs access to {@link
-     * android.content.res.Resources}.
-     */
-    private static Sample[] mSamples;  
+	 * The collection of all Menus in the app. This gets instantiated in
+	 * {@link #onCreate(android.os.Bundle)} because the {@link Menu} constructor
+	 * needs access to {@link android.content.res.Resources}.
+	 */
+	private static Menu[] mMenus;
     private static MobileArrayAdapter[] mArray;
     
 
@@ -83,26 +84,20 @@ public class MainActivity  extends ListActivity implements ActionBar.TabListener
     	    // assume default activity
 ///    	    startActivityForResult(new Intent(this, MyActivity1.class));
     	}       
-        // Instantiate the list of samples.
-        mSamples = new Sample[]{
-				new Sample("SA + SNS", BCITSAWeb.class),
-                new Sample("School B + The Link", TheLink.class),
-                new Sample("Real-time Bus Map", BusMap.class),
-                new Sample("Campus Map", CampusMap.class),
-                new Sample("Study Rooms", StudyRooms.class),
-                new Sample("School B + D2L", BCITSAlist.class),
-                new Sample("School B + SNS", BCITWeb.class),
-                new Sample("Phone Book", PhoneList.class),
-                new Sample("My BCIT", MyBCIT.class),
-                new Sample("School B + About", About.class),
+		// Instantiate the list of Menus.
+		mMenus = new Menu[] { new Menu("SA + SNS", BCITSAWeb.class), new Menu("School B + The Link", TheLink.class),
+				new Menu("Real-time Bus Map", BusMap.class), new Menu("Campus Map", CampusMap.class),
+				new Menu("Study Rooms", StudyRooms.class), new Menu("School B + D2L", BCITSAlist.class),
+				new Menu("School B + SNS", BCITWeb.class), new Menu("Phone Book", PhoneList.class),
+				new Menu("My BCIT", MyBCIT.class), new Menu("School B + About", About.class),
         };
          
 
       
-        setListAdapter(new ArrayAdapter<Sample>(this,
+		setListAdapter(new ArrayAdapter<Menu>(this,
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1, 
-                mSamples));
+				mMenus));
         setListAdapter(new MobileArrayAdapter(this)); 
     }
     
@@ -170,9 +165,9 @@ public class MainActivity  extends ListActivity implements ActionBar.TabListener
 
     @Override
     protected void onListItemClick(ListView listView, View view, int position, long id) {
-        // Launch the sample associated with this list position.
+		// Launch the Menu associated with this list position.
  //   	if ( position == 1) animatedStartActivity();
-        startActivity(new Intent(MainActivity.this, mSamples[position].activityClass));
+		startActivity(new Intent(MainActivity.this, mMenus[position].activityClass));
     }
 
 
