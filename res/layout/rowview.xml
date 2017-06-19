@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+        <ImageView
+            android:id="@+id/list_image"
+            android:contentDescription="@string/app_name"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_person" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/office"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@+id/label"
+        android:editable="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Button_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/office"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Email"
+        android:onClick="send_email" />
+    
+    
+    <Button
+        android:id="@+id/Button_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/office"
+        android:layout_toRightOf="@+id/Button_email"
+        android:text="No Phone"
+        android:textSize="20sp"
+        android:onClick="call_phone" />
+
+</RelativeLayout>

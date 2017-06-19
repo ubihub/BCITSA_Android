@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/container"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+    
+     <WebView
+        android:id="@+id/webView1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.96"
+        android:src="@drawable/ic_launcher" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="1dp"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            
+            <Button
+                android:id="@+id/button_A"
+                android:onClick="show_A"                   
+                android:text="@string/button_A" />
+
+            <Button
+                android:id="@+id/button_B"
+                android:onClick="show_B"                   
+                android:text="@string/button_B" />
+
+            <Button
+                android:id="@+id/button_C"
+                android:onClick="show_C"                   
+                android:text="@string/button_C" />
+
+            <Button
+                android:id="@+id/button_D"
+                android:onClick="show_D"
+                android:text="@string/button_D" />
+        </TableRow>
+    </TableLayout>
+     
+   </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitStart"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+   
+</RelativeLayout>

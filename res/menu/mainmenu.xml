@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/home" android:showAsAction="ifRoom|withText" android:title="Home" android:icon="@drawable/home_def"></item>
+    <item android:id="@+id/open" android:showAsAction="ifRoom|withText" android:title="Open" android:icon="@drawable/ic_action_open"></item>
+    <item android:id="@+id/save" android:showAsAction="ifRoom|withText" android:title="Save" android:icon="@drawable/ic_action_save"></item>
+    <item android:id="@+id/close" android:showAsAction="ifRoom|withText" android:title="Close" android:icon="@drawable/ic_action_close"></item>
+    <item android:id="@+id/history" android:showAsAction="ifRoom|withText" android:title="History" android:icon="@drawable/ic_action_history"></item>
+    <item android:id="@+id/settings" android:showAsAction="ifRoom|withText" android:title="Settings" android:icon="@drawable/ic_action_settings"></item>
+    <item android:id="@+id/settings" android:orderInCategory="100" android:showAsAction="ifRoom|withText" android:title="Configures"/>
+    
+
+</menu>

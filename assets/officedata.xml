@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Office>
+    <officedata>
+        <id>1</id>
+        <officename>Lost and Found</officename>
+        <phone>6044516856</phone>
+        <email>noemail@bcitsa.ca</email>
+    </officedata>
+    <officedata>
+        <id>2</id>
+        <officename>Parking Telephone</officename>
+        <phone>6044328719</phone>
+        <email>noemail@bcitsa.ca</email>
+    </officedata>
+    <officedata>
+        <id>3</id>
+        <officename>Security Centre</officename>
+        <phone>6044516856</phone>
+        <email>noemail@bcitsa.ca</email>
+    </officedata>
+    <officedata>
+        <id>4</id>
+        <officename>BCITSA President</officename>
+        <phone>6044328603</phone>
+        <email>president@bcitsa.ca</email>
+    </officedata>
+    <officedata>
+        <id>5</id>
+        <officename>BCITSA VP. External</officename>
+        <phone>6044328491</phone>
+        <email>vpexternal@bcitsa.ca</email>
+    </officedata> 
+    <officedata>
+        <id>6</id>
+        <officename>BCITSA VP. Campus Life</officename>
+        <phone>6044127430</phone>
+        <email>vpcampuslife@bcitsa.ca</email>
+    </officedata> 
+        <officedata>
+        <id>6</id>
+        <officename>BCITSA VP. Student Affairs</officename>
+        <phone>6044568162</phone>
+        <email>vpstudentaffairs@bcitsa.ca</email>
+    </officedata> 
+        <officedata>
+        <id>6</id>
+        <officename>BCITSA VP. Finance Administration</officename>
+        <phone>6044328605</phone>
+        <email>vpfinance@bcitsa.ca</email>
+    </officedata> 
+</Office>

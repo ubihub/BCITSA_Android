@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:background="#0099ff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="#CCCCCC">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:text="About this Android App \n"
+                 />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.96"
+                android:text="The British Columbia Institute of Technology, is a public polytechnic institution of higher education located in Burnaby, British Columbia, Canada.
+This mobile app has been developed for BCIT students, who feel difficulties to access the online services of BCIT and BCITSA using Android Phones.
+This app includes the following features :
+
+Student Association mobile website, Student Association facebook, Student Association twitter
+The Link(Student Association magazine) website, e-Magazine, facebook, twitter.
+Real-time bus maps near BCIT Burnaby campus
+Campus map ( Downtown, Burnaby, Marine, Richmond campus)
+Study rooms 
+BCIT mobile website, BCIT facebook, BCIT twitter
+BCIT Phone book
+my BCIT
+
+Any feedback is welcomed!"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingTop="5dp" >
+
+                <ca.bcitsa.android.TouchHighlightImageButton
+                    android:id="@+id/thumb_button_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/jameskwon" />
+
+		    <Button
+		        android:id="@+id/button1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:textSize="15dp"
+		        android:text="App Developer \nJames Kwon\nubihub@gmail.com"
+		        android:onClick="send_email" />
+    
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+        
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="@string/description_zoom_touch_close" />
+    
+</FrameLayout>

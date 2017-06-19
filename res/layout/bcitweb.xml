@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/container"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+     <WebView
+        android:id="@+id/webView3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.96"
+        android:src="@drawable/ic_launcher" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="1dp"
+        android:stretchColumns="*" >
+
+        <TableRow>
+            
+            <Button
+                android:id="@+id/button_goHome"
+                android:onClick="goHome"
+                android:text="BCIT Web" />
+
+             
+            <Button
+                android:id="@+id/button_goFacebook"
+                android:onClick="goFacebook"                
+                android:text="@string/button_goFacebook" />
+                         
+            <Button
+                android:id="@+id/button_BCITSAlist"
+                android:onClick="showBCISTSAlist"                
+                android:text="@string/button_BCITSAlist" />
+
+<!-- 
+
+            <Button
+                android:id="@+id/button_About"
+                android:onClick="showAbout"
+                android:text="@string/button_About" />
+-->
+        </TableRow>
+    </TableLayout>
+     
+    
+   </LinearLayout>
+        
+
+  <ProgressBar
+        android:id="@+id/progressBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+   
+</RelativeLayout>

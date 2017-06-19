@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">All-in-One of School B</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_goHome">Menu Home</string>
+    <string name="button_A">#25</string>
+    <string name="button_B">#125</string>
+    <string name="button_C">#130</string>
+    <string name="button_D">#123</string>
+    <string name="button_BCITWeb">School B Web</string>
+    <string name="button_BCITSAWeb">Web</string>
+    <string name="button_TheLink">Magazine</string>
+    <string name="button_goFacebook">Facebook</string>
+    <string name="button_BCITSAlist">Twitter</string>
+    <string name="button_CampusMap">CampusMap</string>
+    <string name="button_BusMap">BusMap</string>
+    <string name="button_About">About</string>
+    <string name="campusmap">CampusMap</string>
+    <string name="busmap">BusMap</string>
+    <string name="button_BurnabyCampus">Burnaby</string>
+    <string name="button_RichmondCampus">Richmond</string>
+    <string name="button_DowntownCampus">Downtown</string>
+    <string name="button_MarineCampus">Marine</string>
+    <!-- Titles -->
+    <string name="title_crossfade">Simple Crossfade</string>
+    <string name="title_card_flip">Card Flip</string>
+    <string name="title_screen_slide">Screen Slide</string>
+    <string name="title_zoom">Zoom</string>
+    <string name="title_layout_changes">Layout Changes</string>
+
+
+    <!-- Actions -->
+    <string name="action_toggle">Toggle indicator</string>
+    <string name="action_add_item">Add item</string>
+    <string name="action_remove_item">Remove item</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_info">Photo info</string>
+    <string name="action_photo">View photo</string>
+
+    <!-- Messages -->
+    <string name="message_empty_layout_changes">Add an item above to get started.</string>
+    <string name="message_zoom_touch_expand">Touch a photo to expand it.</string>
+
+    <!-- Accessibility-only descriptions -->
+    <string name="description_image_1">Image 1</string>
+    <string name="description_image_2">Image 2</string>
+    <string name="description_zoom_touch_close">Expanded image (touch to close)</string>
+
+    <!-- Other strings -->
+    <string name="card_back_title">Angry Red Android</string>
+    <string name="card_back_description"><![CDATA[Lorem ipsum dolor sit]]></string>
+    <string name="lorem_ipsum"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna ut erat elementum cursus in quis ipsum. Nam faucibus ultrices eros, vel tempor leo semper sit amet. Duis magna quam, congue vitae interdum nec, condimentum ut lectus. Sed commodo venenatis eros a dignissim. Nunc adipiscing turpis nec magna venenatis at ultricies ipsum bibendum. Sed volutpat urna quis nisi vulputate egestas. Etiam eu dui a enim lacinia dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nPhasellus orci mi, eleifend nec congue id, volutpat at neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer semper velit vel leo rutrum sed fermentum elit porta.]]></string>
+    <string name="spot_prompt">Choose a spot</string>
+ 
+    <string-array name="spot_arrays">
+        <item>Downtown Campus (Downtown)</item>
+        <item>Burnaby Campus (Burnaby)</item>
+        <item>Richmond Campus (Richmond)</item>
+        <item>Marine Campus (Marine)</item>
+        <item>NE1 (NE1)</item>
+        <item>Medical Services (SE16)</item>
+        <item>Incident Command Centre (Security)</item>
+        <item>Security Office (Security)</item>
+        <item>International Student Office (SW1)</item>
+        <item>Registeration Office (SW1)</item>
+        <item>First Aid (NE16)</item>
+        <item>ehPod (SE14)</item>
+        <item>Town Square (SE2)</item>
+        <item>Professors Mug (SE2)</item>
+        <item>Library (SE14)</item>
+        <item>Gymnasium (SE16)</item>
+        <item>ETC Cafe (SE1)</item>
+        <item>Gateway Deli (SW1)</item>
+        <item>Coyote Jakes (NE1) </item>
+        <item>Tennis Courts (Field)</item>
+        <item>CARI Building (CARI)</item>
+        <item>Gymnasium (SE16)</item>
+        <item>JW Inglis Cafe (NE1)</item>
+        <item>Tim Hortons (SE12)</item>
+        <item>Great Hall (SW1)</item>
+        <item>The Rix (SE2)</item>
+        <item>Telus Theatre (E16)</item>
+        <item>Student Association (SE2)</item>
+        <item>Dormitory (Dorm)</item>
+        <item>Bookstore (SE2)</item>
+    </string-array>
+</resources>
